@@ -23,32 +23,41 @@
 <body>
 <div class="bgimg ">
 
-<h1 class=" text-center  bg-dark text-white" >Employee Details </h1>
+<h3 class=" text-center  bg-dark text-white" >Welcome To Semanticbits Employee Registration Form</h3>
 
-<div class="container mt-7">
-    <button id="GET_TABLE" class="btn btn-info col-sm-12">GET_TABLE_DATA</button><br/><br/>
-    <button id="add_row" class="btn btn-primary col-sm-12">ADD_NEW_ROW</button>
+
+
+
+<div class="container ">
+     <div class="row">
+       <button id="GET_TABLE" class="btn btn-info  col-5">GET_TABLE_DATA</button>
+       <button id="add_row" class="btn btn-primary  col-5 offset-2 ">ADD_NEW_ROW</button>
+     </div>
 </div>
 
-<div class="container mt-4 bg-light">
-    <form id="form_show"   autocomplete="off" class="form-group" >
 
-        <label class="mt-3">Employee Id:</label>
+
+<div class="container  mt-4  border  border-0  col-lg-4 col-md-4 col-sm-10 col-10 bg-light">
+
+    <form id="form_show"   autocomplete="off" class="form-group pb-4" >
+        <h1 class="text text-center" style="font-weight:bold" >Fill your Details</h1>
+
+        <label class="mt-3">EId:</label>
            <input type="text"  id="eid" class="form-control">
 
-        <label class="mt-3">Employee name:</label>
+        <label class="mt-3">EmpName:</label>
            <input type="text"   id="name"  class="form-control">
 
-        <label class="mt-3">Employee job type:</label>
+        <label class="mt-3">EmpJobType:</label>
            <input type="text" id="type"  class="form-control">
 
-        <label class="mt-3">Employee dob:</label>
+        <label class="mt-3">EmpDob:</label>
            <input type="text" id="dob"  class="form-control">
 
-        <label class="mt-3">Employee experience:</label>
+        <label class="mt-3">EmpEXp:</label>
            <input type="text" id="experience"   class="form-control" >
 
-        <label class="mt-3">Employee date of joining:</label>
+        <label class="mt-3">EmpDOJ:</label>
           <input type="text" id="dateOfJoining"  class="form-control" >
 
         <button  class="btn btn-primary mt-4"  id="add" type="button">submit</button>
@@ -57,25 +66,31 @@
 </div>
 
 
+<div class="container">
+<div class="row">
+    <div class="container  table-responsive col-lg-8 col-md-9 col-sm-11 col-10 mt-4  ">
 
-<div class="container mt-3">
-    <div class="table-responsive">
-
-        <table class="table table-bordered table-dark table-striped" id="emp_table"  >
+        <table class="table table-bordered table-dark table-striped  text-center" id="emp_table"  >
 
             <tr>
-                <td >Employee Id</td>
-                <td >Employee name</td>
-                <td >Employee job type</td>
-                <td >Employee dob</td>
-                <td >Employee experience</td>
-                <td >Employee date of joining</td>
-                <td colspan="2">Edit </td>
+                <td > ID</td>
+                <td > NAME</td>
+                <td > JOB TYTPE</td>
+                <td > DOB</td>
+                <td > EXPERIENCE</td>
+                <td > DATE OF JONING</td>
+                <td > EDIT </td>
             </tr>
+
         </table>
 
-    </div>
+
+   </div>
+
 </div>
+
+</div>
+
 
 </div>
 </body>

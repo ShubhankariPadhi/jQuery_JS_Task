@@ -2,8 +2,9 @@
 $(document).ready(function() {
 
     /*////////////////////////////////get json file data into the dynamic table///////////////////*/
-
+$("#emp_table").hide();
     $("#GET_TABLE").click(function () {
+        $("#emp_table").show();
         $.getJSON("Employees.json", function (data) {
             var employee_data = '';
             $.each(data, function (key, value) {
